@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "BOOTH",
+    "slug": "photobooth-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "booth",
+    "platforms": ["ios", "android", "web"],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "BOOTH"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "BOOTH needs camera access to take your photos."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "BOOTH uses your contacts to help you invite friends to events."
+        }
+      ]
+    ]
+  }
+}
